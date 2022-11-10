@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFAED8">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="საკრედიტო ბარათის მონაცემები"
+            android:textColor="#05786E"
+            android:textSize="27sp"
+            android:textStyle="italic|bold"/>
+        <EditText
+            android:id="@+id/creditnum"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="XXXX/XXXX/XXXX/XXXX"
+            android:textColorHint="#009688"
+            android:backgroundTint="#00302B"/>
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="ბარათის სახელი"
+            android:textColorHint="#009688"
+            android:backgroundTint="#00302B"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4">
+            <EditText
+                android:id="@+id/tve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="MM"
+                android:textColorHint="#009688"
+                android:backgroundTint="#00302B"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/weli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="YY"
+                android:textColorHint="#009688"
+                android:backgroundTint="#00302B"
+                android:layout_weight="1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+
+            <EditText
+                android:id="@+id/cvv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="CVV"
+                android:textColorHint="#009688"
+                android:backgroundTint="#00302B"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="100dp"
+            android:layout_height="65dp"
+            android:backgroundTint="#B30741"
+            android:text="Done"
+            android:textColor="#00FFE7"/>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
